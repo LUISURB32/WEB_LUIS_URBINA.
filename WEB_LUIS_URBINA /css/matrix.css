@@ -1,0 +1,164 @@
+
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #263b5a;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+    background: #23466f;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.encabezado h1 {
+    font-size: 26px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #60c4ff;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 25px;
+}
+
+/* Tarjetas */
+.perfil,
+.informacion {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #0000000d;
+}
+
+.perfil {
+    text-align: center;
+    background: #e6f1ff;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 15px;
+}
+
+.perfil h2 {
+    color: #23466f;
+}
+
+.carrera {
+    margin-bottom: 20px;
+    color: #526780;
+}
+
+.datos {
+    text-align: left;
+    margin: 20px 0;
+    overflow-wrap: anywhere;
+}
+
+.datos p {
+    margin-bottom: 10px;
+}
+
+/* Información */
+.informacion h2 {
+    color: #23466f;
+    margin-bottom: 12px;
+}
+
+.informacion p {
+    margin-bottom: 25px;
+}
+
+.informacion ul {
+    list-style: none;
+    margin: 15px 0 25px;
+}
+
+.informacion li {
+    padding: 7px 0;
+}
+
+blockquote {
+    border-left: 4px solid #2788db;
+    padding: 12px;
+    background: #f1f7ff;
+    font-style: italic;
+}
+
+/* Botón */
+button {
+    background: #1681d8;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #125da1;
+}
+
+/* Pie de página */
+footer {
+    background: #23466f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Diseño para celulares */
+@media (max-width: 650px) {
+    .encabezado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .contenedor {
+        grid-template-columns: 1fr;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .perfil,
+    .informacion {
+        padding: 22px;
+    }
+}
